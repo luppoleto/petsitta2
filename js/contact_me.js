@@ -23,7 +23,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
 
-            $.post(targetUrl, $form.serialize(), )
+            //$.post(targetUrl, $form.serialize(), )
             $.ajax({
                 url: targetUrl, // Changed to use built-in Netlify form handling
                 type: "POST",
