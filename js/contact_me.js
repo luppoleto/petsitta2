@@ -21,7 +21,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "thank-you", // Changed to use built-in Netlify form handling
                 type: "POST",
                 data: {
                     name: name,
