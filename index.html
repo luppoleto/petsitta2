@@ -215,7 +215,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="contactForm" id="contactForm" action="thank-you" netlify-honeypot="ruhuman" netlify novalidate>
+                    <form name="contact" id="contactForm" action="thank-you" netlify-honeypot="ruhuman" data-netlify="true" novalidate>
                         <div class="hidden">
                             <label>Don't fill this out unless you are a robot: <input name="ruhuman"></label>
                         </div>
@@ -544,7 +544,8 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Temporarily disable contact AJAX code to test Netlify form handling 
+    <script src="js/contact_me.js"></script> -->
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
