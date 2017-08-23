@@ -212,18 +212,13 @@
                 </div>
             </div>
             <div class="row">
-                <form name="test" action="thank-you" netlify>
-                    <label for="test-name">This is a test</label>
-                    <input type="text" name="test-name">
-                </form>
-            </div>
-            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="contact" id="contactForm" action="thank-you" netlify-honeypot="ruhuman" data-netlify="true" novalidate>
+                    <form name="contact" id="contactForm" action="thank-you" netlify-honeypot="ruhuman" netlify novalidate>
                         <div class="hidden">
-                            <label>Don't fill this out unless you are a robot: <input name="ruhuman"></label>
+                            <label>Don't fill this out unless you are a robot:</label>
+                            <input name="ruhuman">
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
