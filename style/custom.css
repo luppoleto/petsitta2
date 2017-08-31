@@ -1,0 +1,24 @@
+ /* JW's Awesome Custom Styles */
+
+#art .btn-outline { 
+    border-color:#8BCFD8;
+    color:#8BCFD8;
+}
+h2, h3.divider {       
+    background-image: url('/img/petsitta-divider.png');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    padding-top:60px;     
+    padding-bottom:20px; 
+    margin-bottom:40px; 
+    margin-top:5px;
+} 
+hr { 
+    height: 80px;
+    background-image: url('/img/petsitta-divider-lg.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 40px 0 40px 0;
+    border:0;
+}
