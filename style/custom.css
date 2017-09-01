@@ -22,3 +22,12 @@ hr {
     margin: 40px 0 40px 0;
     border:0;
 }
+.portfolio-modal .modal-content { 
+    border: 1px solid silver;
+    background-color: rgba(255, 255, 255, .5)
+     
+}   
+.portfolio-modal .modal-content .container {
+    
+    background-color:#fff;
+}

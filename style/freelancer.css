@@ -492,8 +492,8 @@ fieldset[disabled] .btn-success.active {
   z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+  opacity: 1;
+  display: none;  
 }
 #skipnav a {
   padding: 6px;
