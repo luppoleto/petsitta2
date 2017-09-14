@@ -11,4 +11,14 @@
         $("#paintingCheckbox").prop("checked", true);        
     }); 
 
+    // JW: Add hash to the url so that the back button works to get rid of modals
+    $('.testimonial-modal').on('show.bs.modal', function(e) {
+        window.location.hash = "testimonial";            
+    });
+    $(window).on('hashchange', function (event) {
+        if(window.location.hash != "#testimonial") {
+            $('.testimonial-modal').modal('hide');
+        }
+    });
+
 })(jQuery); // End of use strict
