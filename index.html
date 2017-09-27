@@ -18,7 +18,7 @@
     <!-- Theme CSS -->
     <link href="assets/style.min.css" rel="stylesheet">
     <style type="text/css">
-
+    .lead { font-weight: bold;}
     </style>
 
     <!-- Custom Fonts -->
@@ -96,31 +96,49 @@
     <!-- ABOUT -->
     <section id="about">
         <div class="container">
+            
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-4 text-center">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
                     <h2>Meet The Petsitta</h2>
                 </div>                
-            </div>
-            <div class="row">                    
-                <div class="col-lg-4 text-center">
-                    <img src="img/profile.png" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">                    
-                </div>                    
-                <div class="col-lg-4">                    
-                    <p>Caring for pets has always been an important part of my life. I count myself fortunate to have grown up amongst a gang of fuzzy friends and I’ve proudly continued that tradition in my own home.</p>
-                    <p>As a long time pet owner, I’ve accumulated a wealth of knowledge. Each new companion has offered a fresh perspective, a sprinkling of frustration and – of course - immense joy. </p>
-                </div>                
-                <div class="col-lg-4">
-                    <p>To accompany this experience, I have spent the last 7 years actively pursuing a more formal education; focusing on animal training and advanced care. I am eager to share and apply all that I’ve learned!</p>
-                    <p>I cover clients from the Farmington Valley to Manchester and all points in between! If I can't get there, I may be able to recommend someone in your region.</p>
+            </div>           
+            
+            <div class="row">                                                       
+                <div class="col-lg-3">
+                    <img src="img/profile.png" class="img-center" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">     
+                </div>   
+                <div class="col-lg-6">
+                    <div class="row">
+                        <p class="lead">Caring for pets has always been an important part of my life. I count myself fortunate to have grown
+                            up amongst a gang of fuzzy friends and I’ve proudly continued that tradition in my own home.</p>
+                        <p>As a long time pet owner, I’ve accumulated a wealth of knowledge. Each new companion has offered
+                            a fresh perspective, a sprinkling of frustration and – of course - immense joy. </p>
+                        <p>To accompany this experience, I have spent the last 7+ years actively pursuing a more formal education;
+                            focusing on animal training and advanced care and I'm eager to share &amp; apply all that I’ve learned!</p>                        
+                        <p>I cover clients from the Farmington Valley to Manchester and all points in between! These <a href="" data-toggle="modal"
+                                data-target="#servicearea">Connecticut towns</a> are in our current service area. If I can't
+                            get there, I may be able to recommend someone in your region.</p>
+                        <p class="text-center">
+                            <a class="btn  btn-outline" href="#contact">
+                                <i class="fa fa-calendar"></i> Schedule a Consultation
+                            </a>                                
+                        </p>
+                    </div>                    
                 </div>
-                <div class="col-lg-8 col-lg-offset-4 text-center">
-                    <p><em>The Petsitta is fully insured &amp; bonded</em><p>
-                    <a href="#contact" class="btn btn-lg btn-outline">
-                        <i class="fa fa-calendar"></i> Schedule a Consultation
-                    </a>
+            </div>        
+            <div class="row">
+                <div class="col-lg-12 col-offset-lg-3 well">
+                    <h4>Petsitta is Fully Insured &amp; Bonded</h4>
+                        <p>Most of us are apprehensive when it comes to leaving our treasured pets in the hands of someone else. I’ve experienced this
+                            anxiety first hand with my own pets. If you are considering my service but still skeptical, I
+                            encourage you to <a href="#contact">contact
+                                me</a>. I am available to discuss your pet care concerns at <em>no cost</em> with <em>no obligation</em>. We’ll
+                            work together to create a plan that addresses any questions or worries you might have.
+                        </p>
+                        <p>I look forward to hearing from you and meeting all your furry family members!</p>
                 </div>
             </div>
-        </div>
+        </div>       
     </section>
 
     <!-- TESTIMONIALS -->
@@ -194,7 +212,7 @@
             <div class="row">
                 <div class="text-center">
                     <p>Click on the adorable photos above to read testimonials from their owners.</p>                        
-                    <a href="#contact" class="btn btn-lg btn-primary">
+                    <a href="#contact" class="btn btn-lg btn-outline">
                         <i class="fa fa-paw"></i> Become My Next Satisfied Customer!
                     </a>                    
                 </div>
@@ -249,7 +267,7 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 ">                                           
                     <p>Please fill out the form below and Christy will reach out within 24 hrs. to schedule a FREE in-person "Meet &amp; Greet" with you and your pet!</p>                            
-                    <button class="btn btn-danger" data-toggle="modal" data-target="#servicearea"><i class="fa fa-map-marker"></i> Are You In the Petsitta Service Area?</button>   
+                    <button class="btn btn-outline" data-toggle="modal" data-target="#servicearea"><i class="fa fa-map-marker"></i> Are You In the Petsitta Service Area?</button>   
                     <p></p>
                 </div>                    
             </div>    
@@ -355,13 +373,13 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <h3>Location</h3>
                         <p>On a short leash centered around Bloomfield, CT
-                            <br>Serving the Greater Hartford Area</p>
+                            <br>Serving the <a href="#servicarea" data-toggle="modal" data-target="#servicearea"> Greater Hartford Area</a></p>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                    <div class="footer-col col-md-6">
+                        <h3>Elsewhere On the Web</h3>
                         <ul class="list-inline">
                             <li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
@@ -373,11 +391,7 @@
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
+                    </div>                   
                 </div>
             </div>
         </div>
