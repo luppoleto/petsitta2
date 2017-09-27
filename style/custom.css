@@ -9,7 +9,7 @@ h2, h3.divider {
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
-    padding-top:60px;     
+    padding-top:45px;     
     padding-bottom:20px; 
     margin-bottom:40px; 
     margin-top:5px;
@@ -30,4 +30,14 @@ hr {
 .portfolio-modal .modal-content .container {
     
     background-color:#fff;
+}
+.btn-tab:success { 
+    color:red;
+}
+.form-panel { 
+    padding-top:18px;
+    padding-bottom:24px;    
+}
+#about-pet, #about-you {
+    min-height:430px;
 }

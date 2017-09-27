@@ -1,0 +1,9 @@
+#contact, #clients {
+    background-color: #D1ECEF;
+  }
+
+@media (min-width: 996px) {
+    #about-pet {
+        border-left:2px solid #fff;
+    }
+}

@@ -3,14 +3,6 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    // JW: Wire-up Woodburn & Portrait inquiry buttons
-    $('#woodburnButton').click(function(event) {
-        $("#woodburnCheckbox").prop("checked", true);        
-    }); 
-    $('#paintingButton').click(function(event) {
-        $("#paintingCheckbox").prop("checked", true);        
-    }); 
-
     // JW: Add hash to the url so that the back button works to get rid of modals
     // Add #testimonial
     $('.testimonial-modal').on('show.bs.modal', function(e) {

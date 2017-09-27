@@ -193,21 +193,19 @@ section.success {
     padding-top: 75px;
   }
 }
-#art {
-  background-color: #D1ECEF;
-}
 
-#clients .testimonial-item {
+
+#testimonials .testimonial-item {
   margin: 0 0 15px;
   right: 0;
 }
-#clients .testimonial-item .testimonial-link {
+#testimonials .testimonial-item .testimonial-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#clients .testimonial-item .testimonial-link .caption {
+#testimonials .testimonial-item .testimonial-link .caption {
   background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
@@ -217,10 +215,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#clients .testimonial-item .testimonial-link .caption:hover {
+#testimonials .testimonial-item .testimonial-link .caption:hover {
   opacity: 1;
 }
-#clients .testimonial-item .testimonial-link .caption .caption-content {
+#testimonials .testimonial-item .testimonial-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -230,18 +228,18 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#clients .testimonial-item .testimonial-link .caption .caption-content i {
+#testimonials .testimonial-item .testimonial-link .caption .caption-content i {
   margin-top: -12px;
 }
-#clients .testimonial-item .testimonial-link .caption .caption-content h3,
-#clients .testimonial-item .testimonial-link .caption .caption-content h4 {
+#testimonials .testimonial-item .testimonial-link .caption .caption-content h3,
+#testimonials .testimonial-item .testimonial-link .caption .caption-content h4 {
   margin: 0;
 }
-#clients * {
+#testimonials * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #clients .testimonial-item {
+  #testimonials .testimonial-item {
     margin: 0 0 30px;
   }
 }

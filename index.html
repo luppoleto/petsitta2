@@ -17,6 +17,9 @@
 
     <!-- Theme CSS -->
     <link href="assets/style.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    </style>
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +38,7 @@
 <body id="page-top" class="index" onload="noBack();"onpageshow="if (event.persisted) noBack();" onunload="">
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
-    <!-- Navigation -->
+    <!-- NAV -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,13 +56,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#clients">Clients</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#art" class="">Art</a>
-                    </li>
-                    <li class="page-scroll">
                         <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#art">Art</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -71,7 +74,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
@@ -90,8 +93,38 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="clients">
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-4 text-center">
+                    <h2>Meet The Petsitta</h2>
+                </div>                
+            </div>
+            <div class="row">                    
+                <div class="col-lg-4 text-center">
+                    <img src="img/profile.png" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">                    
+                </div>                    
+                <div class="col-lg-4">                    
+                    <p>Caring for pets has always been an important part of my life. I count myself fortunate to have grown up amongst a gang of fuzzy friends and I’ve proudly continued that tradition in my own home.</p>
+                    <p>As a long time pet owner, I’ve accumulated a wealth of knowledge. Each new companion has offered a fresh perspective, a sprinkling of frustration and – of course - immense joy. </p>
+                </div>                
+                <div class="col-lg-4">
+                    <p>To accompany this experience, I have spent the last 7 years actively pursuing a more formal education; focusing on animal training and advanced care. I am eager to share and apply all that I’ve learned!</p>
+                    <p>I cover clients from the Farmington Valley to Manchester and all points in between! If I can't get there, I may be able to recommend someone in your region.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-4 text-center">
+                    <p><em>The Petsitta is fully insured &amp; bonded</em><p>
+                    <a href="#contact" class="btn btn-lg btn-outline">
+                        <i class="fa fa-calendar"></i> Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="text-center">                        
@@ -126,7 +159,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/testimonials/little-mister.jpg" class="img-responsive" alt="Circus tent">
+                        <img src="/img/testimonials/frodo.jpg" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>
                 <div class="col-sm-3 col-lg-3 testimonial-item">
@@ -169,6 +202,7 @@
         </div>
     </section>
 
+    <!-- ART -->
     <section id="art">
         <div class="container">
             <div class="row">
@@ -182,9 +216,9 @@
                 </div>
                 <div class="col-lg-6 col-lg-offset-3 text-center">
                     <p>Above is a collection of my pet portrait paintings. If you are interested in commisioning a painting of your furry friend, please contact me to get started.</p>
-                    <a href="#contact" id="paintingButton" class="btn btn-lg btn-outline">
-                        <i class="fa fa-commenting"></i> Ask Christy About Painting
-                    </a>
+                    <button href="#contact" id="paintingButton" class="btn btn-lg btn-outline" data-toggle="modal" data-target="#artmodal">
+                        <i class="fa fa-paw"></i> Start Your Painted Pet Portrait
+                    </button>
                 </div>
             </div>
             <hr>
@@ -192,128 +226,131 @@
                 <div class="col-lg-6 col-lg-offset-3 text-center">
                     <h3>Woodburned Portraits</h3>                      
                     <img src="/img/christy-bartley-woodburned-pet-portraits.png" class="img-responsive center-block" alt="Wood Burned Pet Portraits by Christy Wright Bartley" />                    
-                    <p>For those who aren't ready to commission a painting, consider a woodburned portrait. These pet portraits are hand-burned into decorative live edge slices of pine. They make a great gift for the pet-lover in your life!</p>                  
-                    <p>Typical Price: $ ?? | Turnaround: 2-weeks | Size: 12-14" diameter</p>
+                    <p>For those who aren't ready to commission a painting, consider a woodburned portrait. These pet portraits are hand-burned into decorative live edge slices of basswood. They make a great gift for the pet-lover in your life!</p>                  
+                    <p>Typical Price: $ 59-79 | Turnaround: 2-weeks | Size: 9-14" diameter</p>
                 </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#contact" id="woodburnButton" class="btn btn-lg btn-outline">
-                    <i class="fa fa-commenting"></i> Ask Christy About Woodburning
-                </a>
+                <button id="woodburnButton" class="btn btn-lg btn-outline" data-toggle="modal" data-target="#artmodal">
+                    <i class="fa fa-paw"></i> Start Your Woodburn Pet Portrait
+                </button>
             </div>            
         </div>               
     </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img src="img/profile.png" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">
-                    <h2>Meet The Petsitta</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">                    
-                    <p>Caring for pets has always been an important part of my life. I count myself fortunate to have grown up amongst a gang of fuzzy friends and I’ve proudly continued that tradition in my own home.</p>
-                    <p>As a long time pet owner, I’ve accumulated a wealth of knowledge. Each new companion has offered a fresh perspective, a sprinkling of frustration and – of course - immense joy. </p>
-                </div>                
-                <div class="col-lg-4">
-                   <p>To accompany this experience, I have spent the last 7 years actively pursuing a more formal education; focusing on animal training and advanced care. I am eager to share and apply all that I’ve learned!</p>
-                   <p>I cover clients from the Farmington Valley to Manchester and all points in between! If I can't get there, I may be able to recommend someone in your region.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#contact" class="btn btn-lg btn-outline">
-                        <i class="fa fa-calendar"></i> Schedule a Consultation
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+        
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="under">Contact Me</h2>
+                <div class="col-lg-12 text-center" >
+                    <h2 class="under">Request Free Consultation</h2>                    
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">                                           
+                    <p>Please fill out the form below and Christy will reach out within 24 hrs. to schedule a FREE in-person "Meet &amp; Greet" with you and your pet!</p>                            
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#servicearea"><i class="fa fa-map-marker"></i> Are You In the Petsitta Service Area?</button>   
+                    <p></p>
+                </div>                    
+            </div>    
+          
+            <form name="Consultation Request" id="consultationReq" action="thank-you" netlify-honeypot="ruhuman" netlify novalidate>
+                <div class="hidden">
+                    <label>Don't fill this out unless you are a robot:</label>
+                    <input name="ruhuman">
+                </div>                                                   
+                <!-- ABOUT YOU >> -->
+                <div id="about-you" class="col-md-6 form-panel">
+                    <h4 class="text-center"><i class="fa fa-user"></i> About You</h4>                    
                     
+                    <div class="form-group col-xs-12">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    
+                    <div class="form-group col-xs-12">
+                        <label for="town">Town</label> 
+                        <input type="text" class="form-control" id="town" name="town">                                   
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>         
+
+                    <div class="form-group col-xs-12">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>         
+                    
+                    <div class="form-group col-xs-12">
+                        <label>How Should We Contact You?</label>
+                        <select name="contactPref" id="contactPref" class="form-control">  
+                            <option value="email">Email works best</option>                                  
+                            <option value="text">Send me a text message</option>                                    
+                            <option value="call">Please call me on the phone</option>
+                        </select>                                                               
+                    </div>
+                </div><!-- << ABOUT YOU -->
+
+                <!-- ABOUT YOUR PET >> -->
+                <div id="about-pet" class="col-md-6 form-panel">
+                    <h4 class="text-center"><i class="fa fa-paw"></i> About Your Pet</h4>
+                    <div class="form-group col-xs-12 controls">
+                        <label for="petname">Pet Name</label>
+                        <input type="text" class="form-control" id="petname" name="petname">
+                    </div>
+
+                    <div class="form-group col-xs-12 controls">
+                        <!-- <label for="arttype">What type of portrat would you like?</label>   -->
+                        <div class="radio">
+                            <label><input type="radio" value="dog" name="pettype">Dog</label>
+                        </div>                                  
+                        <div class="radio">
+                            <label><input type="radio" value="cat" name="pettype">Cat</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" value="other" name="pettype">Other animal                                    
+                                <input type="text" name="otheranimal">                                     
+                            </label>
+                        </div>                                
+                    </div>
+                                        
+                    <div class="form-group col-xs-12 controls">
+                        <label for="aboutPet">Tell Me About Your Pet </label>
+                        <span>(breed, age, personality, etc..)</span>
+                        <textarea rows="2" class="form-control" id="aboutPet" name="aboutPet"></textarea>
+                    </div>      
+                    <div class="form-group col-xs-12 controls">
+                        <label for="aboutPet">Other Questions / Comments </label>
+                        <span></span>
+                        <textarea rows="2" class="form-control" id="aboutPet" name="aboutPet"></textarea>
+                    </div>                            
+                </div><!-- << ABOUT YOUR PET -->
+                
+                <div class="row">
+                   
+                    <div class="text-center col-xs-12">
+                        <div>
+                            <br>
+                            <button type="submit" class="btn btn-success btn-lg"><i class="fa fa-paw"></i> Request Free Consultation</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!--Simplified Form w/o validation-->
-                    <form name="Contact Me" id="simpleContactForm" action="thank-you" netlify-honeypot="ruhuman" netlify novalidate>
-                        <div class="hidden">
-                            <label>Don't fill this out unless you are a robot:</label>
-                            <input name="ruhuman">
-                        </div>                        
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <label for="name">Your Name</label>
-                                <input type="text" class="form-control" id="name" name="name">
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email">
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <label>What Services Are You Interested In?</label>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" id="petsittingCheckbox" name="petsittingCheckbox" value="petsitting">
-                                        Petsitting
-                                    </label>                                   
-                                </div>   
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" id="trainingCheckbox" name="trainingCheckbox" value="training">
-                                        Training
-                                    </label>                             
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" id="woodburnCheckbox" name="woodburnCheckbox" value="portraitWoodburn">
-                                        Pet Portrait: Woodburn
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" id="paintingCheckbox" name="paintingCheckbox" value="portraitPainting">
-                                        Pet Portrait: Painting
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 controls">
-                                <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" id="message" name="message"></textarea>
-                            </div>
-                        </div>
-                        <br>                        
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>                                      
+                
+            </form>   
+                </div>
+                <div id="portraitReq" class="tab-pane fade">
+                    <h3>TODO: Put Portrait Fields Here (See Notepad)</h3>
                 </div>
             </div>
+                   
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
@@ -361,8 +398,123 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+    
+    <!-- DIALOG BOXES -->
 
-    <!-- Testimonial Modals -->
+    <!-- ART REQUEST -->
+    <div class="modal fade" id="artmodal" role="dialog">
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">YES! I Want An Awesome Pet Portrait!</h4>
+                    <p>Please fill out the fields below and Christy will reach out within 24 hours to coordinate the next steps for your pet portrait.</p>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="row">
+                        <form name="Pet Portrait Inquiry" id="petPortraitForm" action="thank-you" netlify-honeypot="ruhuman" netlify novalidate>
+
+                            <div class="hidden">
+                                <label>Don't fill this out unless you are a robot:</label>
+                                <input name="ruhuman">
+                            </div>                                                           
+                            
+                            <div class="form-group col-xs-12">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+
+                            <div class="form-group col-xs-12">
+                                <label for="petname">Your Pet's Name</label>
+                                <input type="text" class="form-control" id="petname" name="petname">
+                            </div>
+
+                            <div class="form-group col-xs-12 controls">
+                                <label for="email">Your Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>                                              
+                            
+                            <div class="form-group col-xs-12 controls">
+                                <label for="arttype">What type of portrat would you like?</label>  
+                                <div class="radio">
+                                    <label><input type="radio" value="woodburnMedium" name="artype">Woodburn, Medium Oval 7-9" ($59)</label>
+                                </div>                                  
+                                <div class="radio">
+                                    <label><input type="radio" value="woodburnLarge" name="artype">Woodburn, Large Oval 9-12" ($79)</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="painting" name="artype">Painting (Will quote based on size)
+                                    
+                                    <div class="small">   
+                                        Desired dimensions, 
+                                        WIDTH <input type="text" name="paintingWidth" style="width:30px;"> in. x
+                                        HEIGHT <input type="text" name="paintingHeight" style="width:30px;"> in.
+                                    </div>
+                                </label>
+                                </div>                                
+                            </div>
+                            
+                            <div class="form-group col-xs-12 controls">
+                                <label for="message">Additional Comments / Questions</label>
+                                <textarea rows="2" class="form-control" id="message" name="message"></textarea>
+                            </div>                            
+                            
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-md">Let's Get Started!</button>
+                            </div>                            
+        
+                        </form>   
+                    </div>
+                </div><!--MODAL BODY-->
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            
+        </div>
+    </div><!-- << ART -->
+    
+    <!-- SERVICE AREA -->
+    <div id="servicearea" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Serving Greater Hartford</h4>                                    
+                </div>
+                    
+                <div class="modal-body">                                        
+                    <p>Petsitta offers on-site service in the following Connecticut towns:</p>
+                    <ul>
+                        <li>Avon</li>
+                        <li>Bloomfield</li>
+                        <li>East Hartford</li>
+                        <li>East Windsor</li>
+                        <li>Glastonbury</li>
+                        <li>Hartford</li>
+                        <li>Simsbury</li>
+                        <li>Vernon</li>
+                        <li>West Hartford</li>
+                        <li>Windsor</li>
+                        <li>Windsor Locks</li>                                            
+                    </ul>   
+                    <p>If your town is not in this list, don't despair, you can still send a consultation request and I may be able to recommend someone for your area.</p>                                 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- << SERVICE -->
+
+    <!-- TESTIMONIALS -->
     <div class="testimonial-modal modal fade" id="testimonialModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -383,7 +535,7 @@
                                     </strong>
                                 </li>
                                 <li>Client Since:
-                                    <strong><a>April 2014</a>
+                                    <strong><a>Sept. 2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -424,7 +576,7 @@
                                     </strong>
                                 </li>
                                 <li>Client Since:
-                                    <strong><a>2015</a>
+                                    <strong><a>Jan. 2016</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -456,15 +608,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Little Mister</h2>                            
-                            <p>"I wouldn't know what I would do without Christy as my dog walker. She goes above and beyond in her care of your pet! When I was away she took extraordinary care of my "little mister" while he was sick. I couldn't have done a better job myself. My dog loves her and I totally trust her care of him!! She is exceptional!!"</p>
+                            <h2>Frodo</h2>                            
+                            <p>"I wouldn't know what I would do without Christy as my dog walker. She goes above and beyond in her care of your pet! When I was away she took extraordinary care of my 'little mister' while he was sick. I couldn't have done a better job myself. My dog loves her and I totally trust her care of him!! She is exceptional!!"</p>
                             <ul class="list-inline item-details">
                                 <li>Pet Owner:
                                     <strong><a>Michele R. (Vernon, CT)</a>
                                     </strong>
                                 </li>
                                 <li>Client Since:
-                                    <strong><a>2014</a>
+                                    <strong><a>Apr. 2015</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -473,7 +625,7 @@
                                 </li>
                             </ul>
                             <p><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Back to Petsitta</button></p>
-                            <img src="img/testimonials/little-mister.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/testimonials/frodo.jpg" class="img-responsive img-centered" alt="">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Back to Petsitta</button>
                         </div>
                     </div>
@@ -502,7 +654,7 @@
                                     </strong>
                                 </li>
                                 <li>Client Since:
-                                    <strong><a>2014</a>
+                                    <strong><a>Apr. 2015</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -540,7 +692,7 @@
                                         </strong>
                                     </li>
                                     <li>Client Since:
-                                        <strong><a>2014</a>
+                                        <strong><a>Nov. 2015</a>
                                         </strong>
                                     </li>
                                     <li>Service:
