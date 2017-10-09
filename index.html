@@ -18,7 +18,6 @@
     <!-- Theme CSS -->
     <link href="assets/style.min.css" rel="stylesheet">
     <style type="text/css">
-    .lead { font-weight: bold;}
     </style>
 
     <!-- Custom Fonts -->
@@ -104,8 +103,8 @@
             </div>           
             
             <div class="row">                                                       
-                <div class="col-lg-3">
-                    <img src="img/profile.png" class="img-center" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">     
+                <div class="col-lg-3" id="profile-photo">
+                    <img src="img/profile.png" class="img-responsive" alt="Christy Bartley, The Petsitta with her German Shepherd Zoey!">     
                 </div>   
                 <div class="col-lg-6">
                     <div class="row">
@@ -150,6 +149,7 @@
                 </div>
             </div>           
             <div class="row">
+                <!-- Jackson the dog -->
                 <div class="col-sm-3 col-lg-3 testimonial-item ">
                     <a href="#testimonialModal1" class="testimonial-link" data-toggle="modal">
                         <div class="caption">
@@ -157,9 +157,21 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/testimonials/jackson.jpg" class="img-responsive" alt="Cabin">
+                        <img src="img/testimonials/jackson.jpg" class="img-responsive" alt="Jackson the Dog">
                     </a>
                 </div>
+                <!-- Charlie the cat -->
+                <div class="col-sm-3 col-lg-3 testimonial-item">
+                    <a href="#charlieTestimonial" class="testimonial-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/testimonials/charlie.jpg" class="img-responsive" alt="Charlie the Cat">
+                    </a>
+                </div>
+                <!-- Gemma the dog -->
                 <div class="col-sm-3 col-lg-3 testimonial-item">
                     <a href="#testimonialModal2" class="testimonial-link" data-toggle="modal">
                         <div class="caption">
@@ -167,9 +179,10 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/testimonials/gemma.jpg" class="img-responsive" alt="Slice of cake">
+                        <img src="img/testimonials/gemma.jpg" class="img-responsive" alt="Gemma the dog">
                     </a>
                 </div>
+                <!-- Frodo the dog -->
                 <div class="col-sm-3 col-lg-3 testimonial-item">
                     <a href="#testimonialModal3" class="testimonial-link" data-toggle="modal">
                         <div class="caption">
@@ -177,9 +190,12 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/img/testimonials/frodo.jpg" class="img-responsive" alt="Circus tent">
+                        <img src="/img/testimonials/frodo.jpg" class="img-responsive" alt="Frodo the dog">
                     </a>
                 </div>
+            </div>
+            <div class="row">
+                <!-- Bailey the Dog -->
                 <div class="col-sm-3 col-lg-3 testimonial-item">
                     <a href="#testimonialModal4" class="testimonial-link" data-toggle="modal">
                         <div class="caption">
@@ -187,12 +203,10 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/testimonials/bailey.jpg" class="img-responsive" alt="Circus tent">
+                        <img src="img/testimonials/bailey.jpg" class="img-responsive" alt="Bailey the dog">
                     </a>
-                </div>
-               
-            </div>
-            <div class="row">
+                </div>     
+                <!-- Muffin the cat -->               
                 <div class="col-sm-3 col-lg-3 testimonial-item">
                     <a href="#testimonialModal5" class="testimonial-link" data-toggle="modal">
                         <div class="caption">
@@ -203,8 +217,14 @@
                         <img src="img/testimonials/muffin.jpg" class="img-responsive" alt="Muffin the Curious Cat">
                     </a>
                 </div>   
-                <div class="col-sm-3 col-lg-3">
-                    <a href="#contact">                            
+                <div class="col-sm-3 col-lg-3 testimonial-item">
+                    <a href="#contact" class="testimonial-link">      
+                        <div class="caption">
+                            <div class="caption-content">                                
+                                <i class="fa fa-comments fa-3x"></i>
+                                <br/>Request a Consultation!
+                            </div>
+                        </div>                      
                         <img src="/img/testimonials/reserved.jpg" class="img-responsive" alt="This Spot Reserved for Your Pet">
                     </a>
                 </div>         
@@ -359,10 +379,7 @@
             </div>
                 
             </form>   
-                </div>
-                <div id="portraitReq" class="tab-pane fade">
-                    <h3>TODO: Put Portrait Fields Here (See Notepad)</h3>
-                </div>
+                </div>                
             </div>
                    
         </div>
@@ -509,11 +526,13 @@
                     <ul>
                         <li>Avon</li>
                         <li>Bloomfield</li>
+                        <li>Farmington</li>
                         <li>East Hartford</li>
                         <li>East Windsor</li>
                         <li>Glastonbury</li>
                         <li>Hartford</li>
                         <li>Simsbury</li>
+                        <li>South Windsor</li>
                         <li>Vernon</li>
                         <li>West Hartford</li>
                         <li>Windsor</li>
@@ -570,6 +589,59 @@
         </div>
     </div>
     
+    <div class="testimonial-modal modal fade" id="charlieTestimonial" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">                            
+                            <h2>Charlie</h2>                                                  
+                            <p>"We have employed Christy on numerous occasions over the past few years to
+                                care for and help us with our cat Charles. She has come to feed him and spend
+                                time with him when we are away and she has also taken him to the vet and to
+                                grooming services for us. Christy is an extremely diligent worker and absolutely
+                                reliable. She comes when she says she will come and does what she says she will
+                                do. She runs her business with integrity and professionalism. She also frequently
+                                goes above and beyond our expectations, always looking out for the welfare of
+                                the animals and their owners. She even sends us photos of our cat when she is
+                                with him which is delightful and assuring. Christy has a passion for animals and
+                                her interactions with them demonstrate that enthusiasm. The animals sense it
+                                too. Charles loves Christy and is always delighted to see her and spend time with
+                                her. We can’t recommend Christy highly enough. She is outstanding at what she
+                                does and is totally trustworthy."</p>
+                            <ul class="list-inline item-details">
+                                <li>Pet Owner:
+                                    <strong><a>Paula W. (East Windsor, CT)</a>
+                                    </strong>
+                                </li>
+                                <li>Client Since:
+                                    <strong><a>Sept. 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a>Sitting | Walking | Training</a>
+                                    </strong>
+                                </li>
+                            </ul>                        
+                            <p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Back to Petsitta</button>
+                            </p>
+                            <img src="/img/testimonials/charlie.jpg" class="img-responsive img-centered" alt="">
+                        
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Back to Petsitta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="testimonial-modal modal fade" id="testimonialModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">

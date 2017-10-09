@@ -41,3 +41,9 @@ hr {
 #about-pet, #about-you {
     min-height:430px;
 }
+.lead { font-weight: bold; font-size: 22px; } 
+@media (max-width: 1200px) {
+    #profile-photo .img-responsive{            
+        margin:0 auto;         
+    }
+}
